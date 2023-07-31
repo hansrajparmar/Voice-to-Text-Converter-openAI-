@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left .container{
+    height: 70%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px;
+
+    >h2{
+        text-align: center;
+        margin-top: 15px;
+        border-bottom: 4px solid skyblue;
+    }
+
+    .card-header{
+        padding: 20px;
+        text-align: center;
+        /* background-color: rebeccapurple; */
+        h4{
+            font-weight: 100;
+        }
+    }
+
+    .card-body{
+        margin-top: 30px;
+        margin-left: 50px;
+        /* background-color: violet; */
+        /* text-align: center; */
+
+        >#transcription-form{
+            /* background-color: burlywood; */
+            height: 30vh;
+            text-align: center;
+            padding: 30px;
+
+            >#labal{
+                background-color: orange;
+            }
+            >#button{
+                margin-top: 60px;
+                /* text-align: center; */
+                margin-left: -50px;
+                height: 50px;
+                width: 180px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#right{
+    height: 100%;
+    width: 50%;
+}
+
+#right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 550px) {
+    #main{
+        height: 180vh;
+        background-color: red;
+        flex-direction: column;
+    
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    #right{
+        width: 100%;
+    }
+}
